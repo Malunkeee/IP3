@@ -15,7 +15,7 @@ void FictionBook::describe() const {
 }
 
 Book* FictionBook::clone() const {
-    return new FictionBook(*this);
+    return new FictionBook(title, author, year, pages, genre, plotSummary);
 }
 
 const std::string& FictionBook::getGenre() const {

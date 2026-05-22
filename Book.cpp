@@ -1,5 +1,8 @@
 #include "Book.h"
 
+NotImplementedException::NotImplementedException(const std::string& msg)
+    : std::logic_error(msg) {}
+
 Book::Book(const std::string& title, const std::string& author, int year, int pages)
     : title(title), author(author), year(year), pages(pages) {}
 

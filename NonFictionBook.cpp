@@ -16,7 +16,7 @@ void NonFictionBook::describe() const {
 }
 
 Book* NonFictionBook::clone() const {
-    return new NonFictionBook(*this);
+    return new NonFictionBook(title, author, year, pages, subject, keyTopics);
 }
 
 const std::string& NonFictionBook::getSubject() const {
